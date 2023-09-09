@@ -13,11 +13,13 @@ def main():
     if choice == "Home":
         st.subheader("Home")
     elif choice == "탐색적 자료 분석":
-        run_eda_app()
+        st.subheader("탐색적 자료 분석")
     elif choice == "머신러닝":
-        run_ml_app()
-    else:
+        st.subheader("머신러닝")
+    elif choice == "About":
         st.subheader("About")
+    else:
+        pass
 
 
 if __name__ == "__main__":
