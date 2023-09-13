@@ -20,3 +20,10 @@ def run_ml_app():
         sample_list = [sepal_length, sepal_width, petal_length, petal_width]
         st.write(sample_list)
 
+    with cos2:
+        st.subheader("모델 결과를 확인해주세요!")
+
+        # 모델 불러오기
+        model_file = "models/lgr_model_iris230331.pkl"
+        model = joblib.load(open(os.path.join(model_file), "rb"))
+        st.write(model)
