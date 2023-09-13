@@ -32,14 +32,14 @@ fig, ax = plt.subplots()
 def run_graph_1():
     fig, ax = plt.subplots()
     ax.bar(data['이름'], data['나이'])
-    st.pyplot(fig)
+    # st.pyplot(fig)
 
     barplot = sns.barplot(x='이름', y='나이', data=data, ax=ax, palette='Set2')
-    fig = barplot.get_figure()
+    fig = barplot.get_figure(fontproperties=prop)
 
 
 st.dataframe(data, use_container_width=True)
-st.pyplot(fig, fontproperties=prop)
+st.pyplot(fig)
 
 #############
 
