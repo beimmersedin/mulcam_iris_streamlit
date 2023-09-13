@@ -25,5 +25,7 @@ def run_eda_app():
     else:
         pass
 
+    st.dataframe(iris_df)
+
 if __name__ == "__main__":
     main()
