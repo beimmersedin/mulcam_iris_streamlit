@@ -39,7 +39,7 @@ def run_graph_1():
 
 
 st.dataframe(data, use_container_width=True)
-st.pyplot(fig)
+st.pyplot(run_graph_1())
 
 #############
 
