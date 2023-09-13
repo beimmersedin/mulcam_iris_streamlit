@@ -35,7 +35,7 @@ def run_graph_1():
     # st.pyplot(fig)
 
     barplot = sns.barplot(x='이름', y='나이', data=data, ax=ax, palette='Set2')
-    fig = barplot.get_figure(fontproperties=prop)
+    fig = barplot.get_figure()
 
 
 st.dataframe(data, use_container_width=True)
