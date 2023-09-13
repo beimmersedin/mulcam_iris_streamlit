@@ -17,11 +17,11 @@ def main():
         st.subheader("Home")
     elif choice == "탐색적 자료 분석":
         # st.subheader("탐색적 자료 분석")
-        run_eda_app()
+        run_eda_app() ## 팀원1 담당
     elif choice == "머신러닝":
-        st.subheader("머신러닝")
+        st.subheader("머신러닝") ## 팀원2 담당
     elif choice == "About":
-        st.subheader("About")
+        st.subheader("About") ## 팀원3 담당
     else:
         pass
 
