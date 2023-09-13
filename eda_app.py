@@ -27,7 +27,7 @@ def run_eda_app():
                           color = 'species',
                           size = 'petal_width',
                           hover_data = ['petal_length'],
-                          title = 'Scatter Plot')
+                          title = 'Scatter Plot 그래프')
         st.plotly_chart(fig1)
     elif submenu == "그래프":
         st.subheader("그래프")
